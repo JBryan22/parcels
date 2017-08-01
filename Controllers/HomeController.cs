@@ -17,11 +17,7 @@ namespace Parcel.Controllers
     public ActionResult ViewAll()
     {
       List<ParcelObject> allParcels = ParcelObject.GetAll();
-      foreach (ParcelObject parcel in allParcels)
-      {
-        Console.WriteLine(parcel.GetHeight());
-      }
-      return View();
+      return View(allParcels);
     }
 
     [HttpPost("/parcel/create")]
