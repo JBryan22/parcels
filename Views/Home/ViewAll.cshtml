@@ -1,0 +1,16 @@
+@{
+  Layout = "_Layout";
+}
+<h1>Here are your parcels:</h1>
+@foreach(ParcelObject parcel in Model)
+{
+  <ul>
+    <li>Parcels</li>
+    <li>Length:@parcel.GetLength()</li>
+    <li>Width:@parcel.GetWidth()</li>
+    <li>Height:@parcel.GetHeight()</li>
+    <li>Weight:@parcel.GetWeight()</li>
+    <li>Volume:@parcel.GetVolume()</li>
+    <li>Cost to Ship:@parcel.CostToShip()</li>
+  </ul>
+}

@@ -1,0 +1,16 @@
+@{
+  Layout = "_Layout";
+}
+
+<h1>Here is your parcel:</h1>
+<ul>
+    <li>Parcel</li>
+    <li>Length:@Model.GetLength()</li>
+    <li>Width:@Model.GetWidth()</li>
+    <li>Height:@Model.GetHeight()</li>
+    <li>Weight:@Model.GetWeight()</li>
+    <li>Volume:@Model.GetVolume()</li>
+    <li>Cost to Ship:@Model.CostToShip()</li>
+  </ul>
+}
+<p><a href="/parcel/list">View all Parcels</a></p>
